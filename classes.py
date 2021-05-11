@@ -80,8 +80,8 @@ class mesh:
     def getSize(self,s):
         return self.size[s]
     
-    def getParameter(self,s):
-        return self.parameter[s]
+    def getParameter(self,s:parameters):
+        return self.parameter[s.name]
 
     def createData(self):
         self.node_list = []

@@ -77,7 +77,7 @@ class mesh:
     dirichlet_list:condition
     neumann_list:condition
 
-    def setParameters(self,l:float,k:float,q:float):
+    def setParameters(self,l,k,q):
         self.parameter[parameters.ELEMENT_LENGHT.value]=l
         self.parameter[parameters.THERMAL_CONDUCTIVITY.value]=k
         self.parameter[parameters.HEAT_SOURCE.value]=q

@@ -20,9 +20,9 @@ def leerMallayCondiciones(m:mesh):
     filename=input("ingrese el nombre del archivo que contiene los datos de la malla: ")
     datos = []
     with open(filename) as fname:
-	    lineas = fname.readlines()
-	    for linea in lineas:
-		    datos.append(linea.strip('\n'))
+        lineas = fname.readlines()
+        for linea in lineas:
+            datos.append(linea.strip('\n'))
 
     lista = []
     for i in range(0,len(datos)):

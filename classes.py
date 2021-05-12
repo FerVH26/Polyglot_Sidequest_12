@@ -38,11 +38,22 @@ class item:
     def getValue(self):
         return self.value
 
+    def setIntFloat(n:int,r:float):
+        n=0
+        r=0
+    def setIntIntInt(n1:int,n2:int,n3:int):
+        n1=0
+        n2=0
+        n3=0
+
+
 @dataclass
 class node(item):
-    def setIntFloat(self,identifie:int,x_coordinate:float):
-        self.id=identifie
+    def setIntFloat(self,identifier:int,x_coordinate:float):
+        self.id=identifier
         self.x=x_coordinate
+
+
 
 @dataclass
 class element(item):
@@ -59,8 +70,8 @@ class condition(item):
 
 @dataclass
 class mesh:
-    parameter:float
-    size:int
+    parameter:list
+    size:list
     node_list:node
     element_list:element
     dirichlet_list:condition

@@ -24,7 +24,7 @@ def showVector(b):
 def showBs(Bs):
     for i in range(0,len(Bs)):
         print("b del elemento "+str(i+1)+":\n")
-        showVector(bs[i])
+        showVector(Bs[i])
         print("*************************************\n")
 
 def createLocalK(element,m:mesh):
